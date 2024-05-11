@@ -41,9 +41,9 @@ class ReconnectingWebsocket:
     MAX_RECONNECTS = 5
     MAX_RECONNECT_SECONDS = 60
     MIN_RECONNECT_WAIT = 0.1
-    TIMEOUT = 10
+    TIMEOUT = 7
     NO_MESSAGE_RECONNECT_TIMEOUT = 60
-    MAX_QUEUE_SIZE = 100
+    MAX_QUEUE_SIZE = 100000
 
     def __init__(
         self, url: str, path: Optional[str] = None, prefix: str = 'ws/', is_binary: bool = False, exit_coro=None
